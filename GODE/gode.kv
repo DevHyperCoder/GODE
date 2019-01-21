@@ -1,0 +1,39 @@
+<UI>:
+    BoxLayout:
+        orientation:'vertical'
+        BoxLayout:
+            
+            size_hint:1,0.1
+            
+            Button:
+                text: 'New'
+                on_press: root.new()
+                size_hint: 0.1,1
+                pos_hint: {'left': 1, 'top': 1}
+            
+            Button:
+                text: 'Open'
+                on_press: root.open()
+                size_hint: 0.1,1
+                pos_hint: {'left': 1, 'top': 1}
+                
+            Button:
+                text: 'Save'
+                size_hint: 0.1,1
+                pos_hint: {'left': 1, 'top': 1}
+                on_press: root.save()
+                
+            Button:
+                text: 'Save As'
+                size_hint: 0.1,1
+                pos_hint: {'left': 1, 'top': 1}
+                on_press: root.saveAs()
+                
+        BoxLayout:
+            
+            CodeInput:
+                
+                text:'ASD'
+                
+                
+        
